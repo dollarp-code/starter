@@ -46,7 +46,7 @@ captain = "dolapo";*/
 
 //Basic Operators in Javascript
 //Mathematical operators
-const now = 2037;
+/*const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2019;
 console.log(ageJonas, ageSarah);
@@ -56,7 +56,7 @@ console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 
 const firstName = "Qudus";
 const lastName = "Hussein";
-console.log(firstName + " " + lastName);
+console.log(firstName + " " + lastName);*/
 
 // Assignment operators
 /*let x = 10 + 15; // 25
@@ -68,6 +68,7 @@ x--; // x = x - 1 = 139
 console.log(x);*/
 
 // Comparison Operators
+/*
 console.log(ageJonas > ageSarah);
 console.log(ageSarah >= 18);
 
@@ -83,7 +84,7 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
-
+*/
 // Coding Challenge
 
 /* Mark and John are trying to compare their BMI (Body Mass Index), which is
@@ -115,3 +116,30 @@ const markHigherBMI = markBMI > johnBMI;
 console.log(markBMI);
 console.log(johnBMI);
 console.log(markHigherBMI);
+
+// Working with Strings and Template Literals
+const firstName = "Qudus";
+const birthdayYear = 1995;
+const year = 2024;
+const job = "programmer";
+
+const qudus =
+  "I'm " +
+  firstName +
+  ", a " +
+  (year - birthdayYear) +
+  " year old " +
+  job +
+  "!";
+console.log(qudus);
+
+// Using Template Literals
+const qudusNew = `I'm ${firstName}, a ${year - birthdayYear} year old ${job}!`;
+console.log(qudusNew);
+
+console.log(`just a regular string...`);
+
+console.log(`string
+with
+multiple
+lines`);
