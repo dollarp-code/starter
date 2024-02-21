@@ -268,24 +268,47 @@ GOOD LUCK �  */
 // }
 
 // Equality operators === or ==
-const age = "18";
-if (age === 18) {
-  console.log("you just became an adult :D (strict)");
+// const age = "18";
+// if (age === 18) {
+//   console.log("you just became an adult :D (strict)");
+// } else {
+//   console.log("Not equal to");
+// }
+// if (age == 18) console.log("you just became an adult :D (loose)");
+
+// const favorite = Number(prompt("Enter your favourite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if (favorite === 12) {
+//   console.log(`cool ${favorite} is an amazing number`);
+// } else if (favorite === 7) {
+//   console.log(`cool ${favorite} is an amazing number`);
+// } else {
+//   console.log("Invalid number");
+// }
+
+// if (favorite !== 12) console.log("Why not 12");
+
+// Logical operators
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // AND
+console.log(hasDriversLicense || hasGoodVision); // OR
+console.log(!hasDriversLicense); // NOT
+
+if (hasDriversLicense && hasGoodVision) {
+  console.log("Shade is ready to drive");
 } else {
-  console.log("Not equal to");
+  console.log("Someone else should drive");
 }
-if (age == 18) console.log("you just became an adult :D (loose)");
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
 
-const favorite = Number(prompt("Enter your favourite number?"));
-console.log(favorite);
-console.log(typeof favorite);
-
-if (favorite === 12) {
-  console.log(`cool ${favorite} is an amazing number`);
-} else if (favorite === 7) {
-  console.log(`cool ${favorite} is an amazing number`);
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("shade should drive");
 } else {
-  console.log("Invalid number");
+  console.log("Shade should not drive");
 }
-
-if (favorite !== 12) console.log("Why not 12");
