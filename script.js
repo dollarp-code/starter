@@ -156,23 +156,23 @@ if(condition) {
     statement
 } */
 
-const age = 13;
-if (age >= 18) {
-  console.log(`Sarah can start driving🚗`);
-} else {
-  const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years`);
-}
+// const age = 13;
+// if (age >= 18) {
+//   console.log(`Sarah can start driving🚗`);
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(`Sarah is too young. Wait another ${yearsLeft} years`);
+// }
 
-const birthYear = 2000;
+// const birthYear = 2000;
 
-let century;
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
-console.log(century);
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
 
 /*Coding Challenge #2
 Use the BMI example from Challenge #1, and the code you already wrote, and
@@ -247,22 +247,45 @@ GOOD LUCK �  */
 // Falsy values and truthy values
 // 5 falsy values : 0, '', undefined, null, NaN
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean("jonas"));
-console.log(Boolean({}));
-console.log(Boolean(""));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("jonas"));
+// console.log(Boolean({}));
+// console.log(Boolean(""));
 
-const money = 0;
-if (money) {
-  console.log("Don't spend it all !!");
+// const money = 0;
+// if (money) {
+//   console.log("Don't spend it all !!");
+// } else {
+//   console.log("You should get a job");
+// }
+
+// let height;
+// if (height) {
+//   console.log("YAY! Height is defined");
+// } else {
+//   console.log("Height is undefined");
+// }
+
+// Equality operators === or ==
+const age = "18";
+if (age === 18) {
+  console.log("you just became an adult :D (strict)");
 } else {
-  console.log("You should get a job");
+  console.log("Not equal to");
+}
+if (age == 18) console.log("you just became an adult :D (loose)");
+
+const favorite = Number(prompt("Enter your favourite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 12) {
+  console.log(`cool ${favorite} is an amazing number`);
+} else if (favorite === 7) {
+  console.log(`cool ${favorite} is an amazing number`);
+} else {
+  console.log("Invalid number");
 }
 
-let height;
-if (height) {
-  console.log("YAY! Height is defined");
-} else {
-  console.log("Height is undefined");
-}
+if (favorite !== 12) console.log("Why not 12");
