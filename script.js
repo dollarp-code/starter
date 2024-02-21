@@ -118,6 +118,7 @@ console.log(johnBMI);
 console.log(markHigherBMI);
 
 // Working with Strings and Template Literals
+/*
 const firstName = "Qudus";
 const birthdayYear = 1995;
 const year = 2024;
@@ -143,3 +144,30 @@ console.log(`string
 with
 multiple
 lines`);
+*/
+
+// Working with control structre
+/* syntax 
+if(condition) {
+    statement  
+} else {
+    statement
+} */
+
+const age = 13;
+if (age >= 18) {
+  console.log(`Sarah can start driving🚗`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years`);
+}
+
+const birthYear = 2000;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
