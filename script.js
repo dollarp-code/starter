@@ -185,18 +185,61 @@ BMI (28.3) is higher than John's (23.9)!"
 Hint: Use an if/else statement �
 GOOD LUCK �  */
 
-const markWeight = 95;
-const markHeight = 1.76;
-const johnWeight = 85;
-const johnHeight = 1.88;
+// const markWeight = 95;
+// const markHeight = 1.76;
+// const johnWeight = 85;
+// const johnHeight = 1.88;
 
-const markBMI = markWeight / (markHeight * markHeight);
-const johnBMI = johnWeight / johnHeight ** 2;
+// const markBMI = markWeight / (markHeight * markHeight);
+// const johnBMI = johnWeight / johnHeight ** 2;
 
-console.log(markBMI, johnBMI);
+// console.log(markBMI, johnBMI);
 
-if (markBMI > johnBMI) {
-  console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`);
-} else {
-  console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
-}
+// if (markBMI > johnBMI) {
+//   console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`);
+// } else {
+//   console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
+// }
+
+// const shade = "boy";
+// if (shade == "girl") {
+//   console.log("shade is a girl");
+// } else {
+//   console.log("shade is not a girl");
+// }
+
+// const country = "Nigeria";
+// const population = 33;
+// if (population > 33) {
+//   console.log(`${country} population is above average`);
+// } else {
+//   console.log(
+//     `${country} population is ${33 - population} million below average`
+//   );
+// }
+
+// Type Conversion and coercion
+// conversion from Strings to Number
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 10);
+console.log(Number(inputYear) + 10);
+
+console.log(Number("jonas"));
+console.log(typeof NaN);
+
+// Conversion from Number to strings
+console.log(String(23), 23);
+
+// type coercion
+console.log("i am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" * "22");
+console.log("23" / "22");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+console.log(2 + 3 + 4 + "5");
+console.log("20" - "5" - "4" - 2 + "5");
