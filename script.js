@@ -59,13 +59,13 @@ const lastName = "Hussein";
 console.log(firstName + " " + lastName);
 
 // Assignment operators
-let x = 10 + 15; // 25
+/*let x = 10 + 15; // 25
 x += 10; // x = x + 10 = 35
 x *= 4; // x = x * 4 = 140
 x++; // x = x + 1 = 141
 x--; // x = x - 1 = 140
 x--; // x = x - 1 = 139
-console.log(x);
+console.log(x);*/
 
 // Comparison Operators
 console.log(ageJonas > ageSarah);
@@ -75,3 +75,11 @@ const isFullAge = ageSarah >= 18;
 console.log(isFullAge);
 
 console.log(now - 1991 > now - 2018);
+
+// Order of precedence
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
