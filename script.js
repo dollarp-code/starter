@@ -413,13 +413,32 @@ GOOD LUCK */
 
 // Expressions and statements : expression is a piece of code that produces a value while statements are bigger code that is executed  which does not produces a value on itself and it usually end with a semi-colon.
 // examples of expressions
-3 + 4;
-1991;
-true && false && !false;
+// 3 + 4;
+// 1991;
+// true && false && !false;
 
-// examples of a statement
-if (23 > 10) {
-  const str = "23 is bigger";
+// // examples of a statement
+// if (23 > 10) {
+//   const str = "23 is bigger";
+// }
+// const me = "Daniel";
+// console.log(`I'm ${2034 - 1998} years old ${me}`);
+
+// Conditional operator (Ternary operator)
+const age = 19;
+age >= 18
+  ? console.log("allowed to drink wine")
+  : console.log("allowed to drink water");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
+// using if else statement
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
 }
-const me = "Daniel";
-console.log(`I'm ${2034 - 1998} years old ${me}`);
+console.log(drink2);
