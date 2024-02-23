@@ -335,36 +335,78 @@ Test data:
 GOOD LUCK */
 // SOLUTION
 
-const dolphinsFirstScore = 97;
-const dolphinsSecondScore = 112;
-const dolphinsThirdScore = 101;
-const koalasFirstScore = 109;
-const koalasSecondScore = 95;
-const koalasThirdScore = 106;
-const minimumScore = 100;
-const dolphinAverageScore =
-  (dolphinsFirstScore + dolphinsSecondScore + dolphinsThirdScore) / 3;
-const koalasAverageScore =
-  (koalasFirstScore + koalasSecondScore + koalasThirdScore) / 3;
+// const dolphinsFirstScore = 97;
+// const dolphinsSecondScore = 112;
+// const dolphinsThirdScore = 101;
+// const koalasFirstScore = 109;
+// const koalasSecondScore = 95;
+// const koalasThirdScore = 106;
+// const minimumScore = 100;
+// const dolphinAverageScore =
+//   (dolphinsFirstScore + dolphinsSecondScore + dolphinsThirdScore) / 3;
+// const koalasAverageScore =
+//   (koalasFirstScore + koalasSecondScore + koalasThirdScore) / 3;
 
-console.log(dolphinAverageScore, koalasAverageScore);
+// console.log(dolphinAverageScore, koalasAverageScore);
 
-if (
-  dolphinAverageScore > koalasAverageScore &&
-  dolphinAverageScore >= minimumScore
-) {
-  console.log("Dolphin is the winner🏆");
-} else if (
-  dolphinAverageScore < koalasAverageScore &&
-  koalasAverageScore >= minimumScore
-) {
-  console.log("Koalas is the winner 🏆");
-} else if (
-  dolphinAverageScore === koalasAverageScore &&
-  dolphinAverageScore >= minimumScore &&
-  koalasAverageScore >= minimumScore
-) {
-  console.log("It is a draw!! Both wins the trophy 🏆🏆");
+// if (
+//   dolphinAverageScore > koalasAverageScore &&
+//   dolphinAverageScore >= minimumScore
+// ) {
+//   console.log("Dolphin is the winner🏆");
+// } else if (
+//   dolphinAverageScore < koalasAverageScore &&
+//   koalasAverageScore >= minimumScore
+// ) {
+//   console.log("Koalas is the winner 🏆");
+// } else if (
+//   dolphinAverageScore === koalasAverageScore &&
+//   dolphinAverageScore >= minimumScore &&
+//   koalasAverageScore >= minimumScore
+// ) {
+//   console.log("It is a draw!! Both wins the trophy 🏆🏆");
+// } else {
+//   console.log("Nobody wins the Trophy 😌");
+// }
+
+// The switch statement
+const day = "friday";
+
+switch (day) {
+  case "monday": // day === "monday"
+    console.log("plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+// using if else statement
+if (day === "monday") {
+  console.log("plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend");
 } else {
-  console.log("Nobody wins the Trophy 😌");
+  console.log("day is invalid");
 }
