@@ -370,43 +370,56 @@ GOOD LUCK */
 // }
 
 // The switch statement
-const day = "friday";
+// const day = "friday";
 
-switch (day) {
-  case "monday": // day === "monday"
-    console.log("plan course structure");
-    console.log("Go to coding meetup");
-    break;
-  case "tuesday":
-    console.log("prepare theory videos");
-    break;
-  case "wednesday":
-  case "thursday":
-    console.log("Write code examples");
-    break;
-  case "friday":
-    console.log("Record videos");
-    break;
-  case "saturday":
-  case "sunday":
-    console.log("Enjoy the weekend");
-    break;
-  default:
-    console.log("Not a valid day");
-}
+// switch (day) {
+//   case "monday": // day === "monday"
+//     console.log("plan course structure");
+//     console.log("Go to coding meetup");
+//     break;
+//   case "tuesday":
+//     console.log("prepare theory videos");
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log("Write code examples");
+//     break;
+//   case "friday":
+//     console.log("Record videos");
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log("Enjoy the weekend");
+//     break;
+//   default:
+//     console.log("Not a valid day");
+// }
 
-// using if else statement
-if (day === "monday") {
-  console.log("plan course structure");
-  console.log("Go to coding meetup");
-} else if (day === "tuesday") {
-  console.log("prepare theory videos");
-} else if (day === "wednesday" || day === "thursday") {
-  console.log("Write code examples");
-} else if (day === "friday") {
-  console.log("Record videos");
-} else if (day === "saturday" || day === "sunday") {
-  console.log("Enjoy the weekend");
-} else {
-  console.log("day is invalid");
+// // using if else statement
+// if (day === "monday") {
+//   console.log("plan course structure");
+//   console.log("Go to coding meetup");
+// } else if (day === "tuesday") {
+//   console.log("prepare theory videos");
+// } else if (day === "wednesday" || day === "thursday") {
+//   console.log("Write code examples");
+// } else if (day === "friday") {
+//   console.log("Record videos");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("Enjoy the weekend");
+// } else {
+//   console.log("day is invalid");
+// }
+
+// Expressions and statements : expression is a piece of code that produces a value while statements are bigger code that is executed  which does not produces a value on itself and it usually end with a semi-colon.
+// examples of expressions
+3 + 4;
+1991;
+true && false && !false;
+
+// examples of a statement
+if (23 > 10) {
+  const str = "23 is bigger";
 }
+const me = "Daniel";
+console.log(`I'm ${2034 - 1998} years old ${me}`);
