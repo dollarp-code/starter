@@ -462,12 +462,17 @@ Hints:
 § Value X is between 50 and 300, if it's >= 50 && <= 300  */
 
 //  using conditional operator
-const bill = 430;
-const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
-const totalValue = bill + tip;
-console.log(
-  `The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`
-);
+// const bill = 430;
+// const tip =
+//   bill >= 50 && bill <= 300
+//     ? bill * (15 / 100)
+//     : bill === 300 && bill === 50
+//     ? bill * (25 / 100)
+//     : bill * (20 / 100);
+// const totalValue = bill + tip;
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`
+// );
 
 //using if else to solve
 // let tip;
@@ -481,29 +486,38 @@ console.log(
 //   `The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`
 // );
 
-const language = prompt("Enter your spoken language");
+// const language = prompt("Enter your spoken language");
 
-switch (language) {
-  case "chinese":
-  case "mandarin":
-    console.log("Most number of native speakers");
-    break;
+// switch (language) {
+//   case "chinese":
+//   case "mandarin":
+//     console.log("Most number of native speakers");
+//     break;
 
-  case "spanish":
-    console.log("2nd place in number of native speakers");
-    break;
+//   case "spanish":
+//     console.log("2nd place in number of native speakers");
+//     break;
 
-  case "english":
-    console.log("3rd place in number of native speakers");
-    break;
+//   case "english":
+//     console.log("3rd place in number of native speakers");
+//     break;
 
-  case "hindi":
-    console.log("4th place in number of native speakers");
-    break;
+//   case "hindi":
+//     console.log("4th place in number of native speakers");
+//     break;
 
-  case "arabic":
-    console.log("5th most spoken language");
-    break;
-  default:
-    console.log("Great language too :D");
-}
+//   case "arabic":
+//     console.log("5th most spoken language");
+//     break;
+//   default:
+//     console.log("Great language too :D");
+// }
+
+const age = 25;
+age === 25
+  ? console.log("age is equal to 25")
+  : age > 25
+  ? console.log("age is greater than 25")
+  : age < 25
+  ? console.log("age is less than 25")
+  : console.log("age is not a number");
