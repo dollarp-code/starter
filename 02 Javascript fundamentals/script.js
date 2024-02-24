@@ -9,16 +9,16 @@ function logger() {
 // calling / invoking
 logger();
 
-function fruitProcessor(apples, oranges) {
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-  return juice;
-}
+// function fruitProcessor(apples, oranges) {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//   return juice;
+// }
 
-const applejuice = fruitProcessor(5, 0);
-console.log(applejuice);
+// const applejuice = fruitProcessor(5, 0);
+// console.log(applejuice);
 
-const appleOrangeJuice = fruitProcessor(5, 7);
-console.log(appleOrangeJuice);
+// const appleOrangeJuice = fruitProcessor(5, 7);
+// console.log(appleOrangeJuice);
 
 // Types of functions 1. function decleration 2. function expression
 // 1. Function declaration
@@ -49,3 +49,17 @@ const yearsUntilRetirement = (birthyear, firstName) => {
 
 console.log(yearsUntilRetirement(1994, "Sodiq"));
 console.log(yearsUntilRetirement(1999, "Rasak"));
+
+// Fnctions calling another functions
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  const juice = `juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
