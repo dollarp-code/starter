@@ -63,3 +63,20 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+
+/*Write a function called describeCountry which takes three parameters: country, population and capitalCity. Based on this input, the function returns a string with this format: 'Finland has 6 million people and its capital city is Helsinki'.
+
+Call this function 3 times, with input data for 3 different countries. Store the returned values in 3 different variables, and log them to the console.
+
+ */
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+}
+
+const descNigeria = describeCountry("Nigeria", 10, "Abuja");
+const descAmerica = describeCountry("America", 15, "Washington DC");
+const descGhana = describeCountry("Ghana", 7, "Accra");
+console.log(descNigeria);
+console.log(descAmerica);
+console.log(descGhana);
