@@ -133,3 +133,21 @@ console.log(scoreDolphins, scoreKoalas);
 
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(77, 160);
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const populationNigeria = percentageOfWorld1(2555);
+const populationGhana = percentageOfWorld1(3441);
+const populationRwanda = percentageOfWorld1(1993);
+console.log(populationNigeria, populationGhana, populationRwanda);
+
+const percentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+const populationChina = percentageOfWorld2(2555);
+const populationTogo = percentageOfWorld2(3441);
+const populationAmerica = percentageOfWorld2(1993);
+console.log(populationNigeria, populationGhana, populationRwanda);
