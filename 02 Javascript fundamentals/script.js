@@ -134,6 +134,7 @@ console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(77, 160);
 
+// using Function declaration
 function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
@@ -143,6 +144,7 @@ const populationGhana = percentageOfWorld1(3441);
 const populationRwanda = percentageOfWorld1(1993);
 console.log(populationNigeria, populationGhana, populationRwanda);
 
+// using function expression
 const percentageOfWorld2 = function (population) {
   return (population / 7900) * 100;
 };
@@ -151,3 +153,11 @@ const populationChina = percentageOfWorld2(2555);
 const populationTogo = percentageOfWorld2(3441);
 const populationAmerica = percentageOfWorld2(1993);
 console.log(populationNigeria, populationGhana, populationRwanda);
+
+// using Arrow function
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+const populationAngola = percentageOfWorld3(2555);
+const populationMorocco = percentageOfWorld3(3441);
+const populationSenegal = percentageOfWorld3(1993);
+console.log(populationAngola, populationMorocco, populationSenegal);
