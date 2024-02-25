@@ -161,3 +161,12 @@ const populationAngola = percentageOfWorld3(2555);
 const populationMorocco = percentageOfWorld3(3441);
 const populationSenegal = percentageOfWorld3(1993);
 console.log(populationAngola, populationMorocco, populationSenegal);
+
+// function calling function
+const describePopulation = function (country, population) {
+  return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+    population
+  )}% of the world.`;
+};
+
+console.log(describePopulation("Nigeria", 2555));
