@@ -173,34 +173,59 @@ Apply this to the team's average scores �*/
 
 // Arrays
 
+// const friends = ["Micheal", "Steven", "Dolapo"];
+// const age = new Array(1991, 1983, 1987, 2020);
+
+// console.log(friends);
+// console.log(friends[0]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[1] = "Daniel";
+// console.log(friends);
+
+// const jonas = [friends, age, "Hussein", 2037 - 1991, "Teacher"];
+
+// console.log(jonas);
+
+// // Exercise
+// const calcAge = function (birthyear) {
+//   return 2037 - birthyear;
+// };
+// const years = [1990, 1967, 2002, 2010, 2018];
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [
+//   calcAge(years[0]),
+//   calcAge(years[1]),
+//   calcAge(years[years.length - 1]),
+// ];
+// console.log(ages);
+
 const friends = ["Micheal", "Steven", "Dolapo"];
-const age = new Array(1991, 1983, 1987, 2020);
 
-console.log(friends);
-console.log(friends[0]);
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-
-friends[1] = "Daniel";
+// Adding elements to array usine push and unshift
+friends.push("rose"); // add element at the end of the array
 console.log(friends);
 
-const jonas = [friends, age, "Hussein", 2037 - 1991, "Teacher"];
+const newlength = friends.unshift("lekan"); // add element at the begining of the array
+console.log(friends);
+console.log(newlength);
 
-console.log(jonas);
+// removing elements from the array using pop and shft
+friends.pop(); // removes element at the end of the array
+console.log(friends);
 
-// Exercise
-const calcAge = function (birthyear) {
-  return 2037 - birthyear;
-};
-const years = [1990, 1967, 2002, 2010, 2018];
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
+friends.shift(); // removes element at the begining of the array
+console.log(friends);
 
-const ages = [
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 1]),
-];
-console.log(ages);
+console.log(friends.indexOf("Dolapo")); // checking for the index of an element
+console.log(friends.includes("Dolapo")); // checking wether an element is in the array and it returs a boolean
+console.log(friends.includes("barbie"));
+
+if (friends.includes("Dolapo")) {
+  console.log("you have a friend called Dolapo");
+}
