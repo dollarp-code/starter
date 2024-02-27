@@ -269,3 +269,42 @@ console.log(bills, tips);
 const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
 console.log(total);
+
+// OBJECTS IN JAVASCRIPT
+
+const sodiq = {
+  firstName: "Rasaq",
+  lastName: "Sodiq",
+  age: 27,
+  job: "Engineer",
+  friends: ["Daniel", "Meekcee", "Jonas"],
+};
+console.log(sodiq);
+// Dot Notation
+console.log(sodiq.firstName);
+
+// bracket notation
+console.log(sodiq["firstName"]);
+
+const interestedIn = prompt(
+  "what do you want to know about sodiq? choose between age, firstName, lastName, job, friends"
+);
+
+if (sodiq[interestedIn]) {
+  console.log(sodiq[interestedIn]);
+} else {
+  console.log("Wrong request");
+}
+
+// How to add properties to object
+
+sodiq.location = "Nigeria"; // using dot notation
+sodiq["twitter"] = "@hareskaysodiq";
+console.log(sodiq);
+
+//challenge
+// "sodiq has 3 friends, and his best friend is called Meekcee"
+
+console.log(
+  `${sodiq.lastName} has ${sodiq.friends.length} friends, and his best friend is called ${sodiq.friends[1]}`
+);
