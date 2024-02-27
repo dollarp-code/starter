@@ -106,67 +106,101 @@ Hints:
 § To check if number A is at least double number B, check for A >= 2 * B.
 Apply this to the team's average scores �*/
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-// Test 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// // Test 1
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
 
-console.log(scoreDolphins, scoreKoalas);
+// console.log(scoreDolphins, scoreKoalas);
 
-function checkWinner(avgDolphins, avgKoalas) {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win ${avgDolphins} vs ${avgKoalas}`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win ${avgKoalas} vs ${avgDolphins}`);
-  } else {
-    console.log("Nobody wins");
-  }
-}
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (avgDolphins >= 2 * avgKoalas) {
+//     console.log(`Dolphins win ${avgDolphins} vs ${avgKoalas}`);
+//   } else if (avgKoalas >= 2 * avgDolphins) {
+//     console.log(`Koalas win ${avgKoalas} vs ${avgDolphins}`);
+//   } else {
+//     console.log("Nobody wins");
+//   }
+// }
 
-checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(scoreDolphins, scoreKoalas);
 
-// Test 2
-scoreDolphins = calcAverage(85, 54, 41);
-scoreKoalas = calcAverage(23, 34, 27);
+// // Test 2
+// scoreDolphins = calcAverage(85, 54, 41);
+// scoreKoalas = calcAverage(23, 34, 27);
 
-console.log(scoreDolphins, scoreKoalas);
+// console.log(scoreDolphins, scoreKoalas);
 
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(77, 160);
+// checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(77, 160);
 
-// using Function declaration
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
-}
+// // using Function declaration
+// function percentageOfWorld1(population) {
+//   return (population / 7900) * 100;
+// }
 
-const populationNigeria = percentageOfWorld1(2555);
-const populationGhana = percentageOfWorld1(3441);
-const populationRwanda = percentageOfWorld1(1993);
-console.log(populationNigeria, populationGhana, populationRwanda);
+// const populationNigeria = percentageOfWorld1(2555);
+// const populationGhana = percentageOfWorld1(3441);
+// const populationRwanda = percentageOfWorld1(1993);
+// console.log(populationNigeria, populationGhana, populationRwanda);
 
-// using function expression
-const percentageOfWorld2 = function (population) {
-  return (population / 7900) * 100;
+// // using function expression
+// const percentageOfWorld2 = function (population) {
+//   return (population / 7900) * 100;
+// };
+
+// const populationChina = percentageOfWorld2(2555);
+// const populationTogo = percentageOfWorld2(3441);
+// const populationAmerica = percentageOfWorld2(1993);
+// console.log(populationNigeria, populationGhana, populationRwanda);
+
+// // using Arrow function
+// const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+// const populationAngola = percentageOfWorld3(2555);
+// const populationMorocco = percentageOfWorld3(3441);
+// const populationSenegal = percentageOfWorld3(1993);
+// console.log(populationAngola, populationMorocco, populationSenegal);
+
+// // function calling function
+// const describePopulation = function (country, population) {
+//   return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+//     population
+//   )}% of the world.`;
+// };
+
+// console.log(describePopulation("Nigeria", 2555));
+
+// Arrays
+
+const friends = ["Micheal", "Steven", "Dolapo"];
+const age = new Array(1991, 1983, 1987, 2020);
+
+console.log(friends);
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[1] = "Daniel";
+console.log(friends);
+
+const jonas = [friends, age, "Hussein", 2037 - 1991, "Teacher"];
+
+console.log(jonas);
+
+// Exercise
+const calcAge = function (birthyear) {
+  return 2037 - birthyear;
 };
+const years = [1990, 1967, 2002, 2010, 2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
 
-const populationChina = percentageOfWorld2(2555);
-const populationTogo = percentageOfWorld2(3441);
-const populationAmerica = percentageOfWorld2(1993);
-console.log(populationNigeria, populationGhana, populationRwanda);
-
-// using Arrow function
-const percentageOfWorld3 = (population) => (population / 7900) * 100;
-
-const populationAngola = percentageOfWorld3(2555);
-const populationMorocco = percentageOfWorld3(3441);
-const populationSenegal = percentageOfWorld3(1993);
-console.log(populationAngola, populationMorocco, populationSenegal);
-
-// function calling function
-const describePopulation = function (country, population) {
-  return `${country} has ${population} million people, which is about ${percentageOfWorld1(
-    population
-  )}% of the world.`;
-};
-
-console.log(describePopulation("Nigeria", 2555));
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
