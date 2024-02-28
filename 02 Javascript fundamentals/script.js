@@ -252,57 +252,94 @@ array)  */
 
 // solution
 
-function calcTip(bill) {
-  const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
-  const totalValue = bill + tip;
-  return tip;
-}
+// function calcTip(bill) {
+//   const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
+//   const totalValue = bill + tip;
+//   return tip;
+// }
 
-const bills = [125, 555, 44];
+// const bills = [125, 555, 44];
 
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
-console.log(bills, tips);
+// console.log(bills, tips);
 
-const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
+// const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
-console.log(total);
+// console.log(total);
 
-// OBJECTS IN JAVASCRIPT
+// // OBJECTS IN JAVASCRIPT
 
+// const sodiq = {
+//   firstName: "Rasaq",
+//   lastName: "Sodiq",
+//   age: 27,
+//   job: "Engineer",
+//   friends: ["Daniel", "Meekcee", "Jonas"],
+// };
+// console.log(sodiq);
+// // Dot Notation
+// console.log(sodiq.firstName);
+
+// // bracket notation
+// console.log(sodiq["firstName"]);
+
+// const interestedIn = prompt(
+//   "what do you want to know about sodiq? choose between age, firstName, lastName, job, friends"
+// );
+
+// if (sodiq[interestedIn]) {
+//   console.log(sodiq[interestedIn]);
+// } else {
+//   console.log("Wrong request");
+// }
+
+// // How to add properties to object
+
+// sodiq.location = "Nigeria"; // using dot notation
+// sodiq["twitter"] = "@hareskaysodiq"; // using bracket notation
+// console.log(sodiq);
+
+// //challenge
+// // "sodiq has 3 friends, and his best friend is called Meekcee"
+
+// console.log(
+//   `${sodiq.lastName} has ${sodiq.friends.length} friends, and his best friend is called ${sodiq.friends[1]}`
+// );
+
+// object method
 const sodiq = {
   firstName: "Rasaq",
   lastName: "Sodiq",
-  age: 27,
+  birthYear: 1991,
   job: "Engineer",
   friends: ["Daniel", "Meekcee", "Jonas"],
+  hasDriversLicense: true,
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+
+  // using this keyword
+  // calcAge: function () {
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.lastName} is a ${this.calcAge()}-year old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
 };
-console.log(sodiq);
-// Dot Notation
-console.log(sodiq.firstName);
 
-// bracket notation
-console.log(sodiq["firstName"]);
+console.log(sodiq.calcAge());
+console.log(sodiq.age);
 
-const interestedIn = prompt(
-  "what do you want to know about sodiq? choose between age, firstName, lastName, job, friends"
-);
+// challenge
+// "Sodiq is a 46-year old teacher, and he has a driver's license"
 
-if (sodiq[interestedIn]) {
-  console.log(sodiq[interestedIn]);
-} else {
-  console.log("Wrong request");
-}
-
-// How to add properties to object
-
-sodiq.location = "Nigeria"; // using dot notation
-sodiq["twitter"] = "@hareskaysodiq";
-console.log(sodiq);
-
-//challenge
-// "sodiq has 3 friends, and his best friend is called Meekcee"
-
-console.log(
-  `${sodiq.lastName} has ${sodiq.friends.length} friends, and his best friend is called ${sodiq.friends[1]}`
-);
+console.log(sodiq.getSummary());
