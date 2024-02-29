@@ -20,7 +20,7 @@
 // const appleOrangeJuice = fruitProcessor(5, 7);
 // console.log(appleOrangeJuice);
 
-// Types of functions 1. function decleration 2. function expression
+// Types of functions 1. function decleration 2. function expression 3. Arrow function
 // 1. Function declaration
 // function calcAge1(birthyear) {
 //   const age = 2024 - birthyear;
@@ -254,7 +254,6 @@ array)  */
 
 // function calcTip(bill) {
 //   const tip = bill >= 50 && bill <= 300 ? bill * (15 / 100) : bill * (20 / 100);
-//   const totalValue = bill + tip;
 //   return tip;
 // }
 
@@ -394,3 +393,27 @@ if (mark.bmi > john.bmi) {
     `${john.fullName} BMI ${john.bmi} is higher than ${mark.fullName} BMI ${mark.bmi}`
   );
 }
+
+// For loop control Structure
+// loops keeps running while conditions is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`lifting weights repetition ${rep}`);
+}
+
+function operationss(ball, book, food, fan) {
+  return (ball * book) / food + fan;
+}
+
+console.log(operationss(2, 4, 6, 6));
+
+// Looping Arrays Breakking and continuing
+
+const jonas = [friends, "age", "Hussein", 2037 - 1991, "Teacher", false, true];
+const types = [];
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[i], typeof jonas[i]);
+
+  types[i] = typeof jonas[i];
+}
+
+console.log(types);
