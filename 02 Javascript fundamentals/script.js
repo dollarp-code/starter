@@ -408,7 +408,7 @@ console.log(operationss(2, 4, 6, 6));
 
 // Looping Arrays Breakking and continuing
 
-const jonas = [friends, "age", "Hussein", 2037 - 1991, "Teacher", false, true];
+const jonas = [friends, "age", "Hussein", 2037 - 1991, "Teacher"];
 
 const types = [];
 
@@ -446,4 +446,8 @@ for (let i = 0; i < jonas.length; i++) {
   if (typeof jonas[i] === "number") break;
 
   console.log(jonas[i], typeof jonas[i]);
+}
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(i, jonas[i]);
 }
