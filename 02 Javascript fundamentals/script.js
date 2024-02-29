@@ -359,40 +359,40 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 tall. */
 
 // solution
-const mark = {
-  fullName: "Mark Miller",
-  weight: 78,
-  height: 1.69,
-  calcBMI: function () {
-    this.bmi = this.weight / this.height ** 2;
-    return this.bmi;
-  },
-};
+// const mark = {
+//   fullName: "Mark Miller",
+//   weight: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.weight / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-const john = {
-  fullName: "John Smith",
-  weight: 92,
-  height: 1.95,
-  calcBMI: function () {
-    this.bmi = this.weight / this.height ** 2;
-    return this.bmi;
-  },
-};
+// const john = {
+//   fullName: "John Smith",
+//   weight: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.weight / this.height ** 2;
+//     return this.bmi;
+//   },
+// };
 
-mark.calcBMI();
-john.calcBMI();
+// mark.calcBMI();
+// john.calcBMI();
 
-console.log(mark.bmi, john.bmi);
+// console.log(mark.bmi, john.bmi);
 
-if (mark.bmi > john.bmi) {
-  console.log(
-    `${mark.fullName} BMI ${mark.bmi} is higher than ${john.fullName} BMI ${john.bmi}`
-  );
-} else if (john.bmi > mark.bmi) {
-  console.log(
-    `${john.fullName} BMI ${john.bmi} is higher than ${mark.fullName} BMI ${mark.bmi}`
-  );
-}
+// if (mark.bmi > john.bmi) {
+//   console.log(
+//     `${mark.fullName} BMI ${mark.bmi} is higher than ${john.fullName} BMI ${john.bmi}`
+//   );
+// } else if (john.bmi > mark.bmi) {
+//   console.log(
+//     `${john.fullName} BMI ${john.bmi} is higher than ${mark.fullName} BMI ${mark.bmi}`
+//   );
+// }
 
 // For loop control Structure
 // loops keeps running while conditions is TRUE
@@ -409,11 +409,41 @@ console.log(operationss(2, 4, 6, 6));
 // Looping Arrays Breakking and continuing
 
 const jonas = [friends, "age", "Hussein", 2037 - 1991, "Teacher", false, true];
+
 const types = [];
+
 for (let i = 0; i < jonas.length; i++) {
+  // Reading from jonas array
   console.log(jonas[i], typeof jonas[i]);
 
-  types[i] = typeof jonas[i];
+  // Filling types of array
+  // types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
 }
 
 console.log(types);
+
+const years = [1991, 2007, 1989, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break: continue is to exit the current iteration of the loop and continue to the next one, break is used to terminate the whole loop
+
+console.log("----- ONLY STRINGS -----");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== "string") continue;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log("----- BREAK WITH NUMBERS -----");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] === "number") break;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
